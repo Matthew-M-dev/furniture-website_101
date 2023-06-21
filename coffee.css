@@ -1,0 +1,205 @@
+* {
+    box-sizing: border-box; 
+}
+body {
+    background-image: url("coffee4.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 20px;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+.logo {
+    color: white;
+    font-size: 25px;
+}
+span {
+    color: red;
+}
+.navbar ul li{
+    list-style-type: none;
+    display: inline-block;
+    padding-left: 35px;
+}
+.navbar ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+.navbar ul li a:hover {
+    color: red;
+    transition: .3s;
+}
+.sub1 {
+    width: 50%;
+    height: 100px;
+    color: white;
+    border: 5px solid white;
+    padding: 10px;
+    text-align: center;
+    position: center;
+    margin-left: 200px;
+    margin-top: 50px;
+}
+.sub2 {
+    border: 1px solid red;
+    text-align: center;
+    color: red;
+    margin: 30px;
+    padding-top: 10px;
+    border-radius: 1px;
+}
+.sub3 {
+    width: 90%;
+    height: 80%;
+    background-color:rgba(173, 102, 102, 0.521);
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    margin-top: 60px;
+    margin-left: 40px;
+    border-radius: 10px;
+}
+.sub3 h2 {
+  color: black; 
+}
+.sub3 p {
+    font-weight:bolder;
+}
+.sub4 {
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: 60px;
+}
+.sub4 h3{
+    color: white;
+    background-color: black;
+    width: 50%;
+    margin-left: 25%;
+}
+.sub4 p {
+    font-weight: bold;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color: burlywood;
+    width: 50%;
+    margin-left: 25%;
+}
+.sub4 label {
+    color: whitesmoke;
+    font-weight: bold;
+    padding-right: 250px;
+}
+.sub4 input {
+    width: 280px;
+    height: 40px;
+    padding: 5px;
+    margin-left: 70px;
+    margin-right: 10px;
+    padding: 10px;
+    color: white;
+    background-color: rgba(141, 121, 95, 0.918);
+    border-radius: 70px;
+}
+.sub4 button {
+    width: 150px;
+    height: 30px;
+    border-style: none;
+    background-color: red;
+    padding: 2px;
+    color: white;
+    border-radius: 80px;
+    transition: .1s;
+}
+.sub4 button:hover {
+    transform: scale(0.9);
+}
+::placeholder {
+    color: white;
+}
+label, input {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+label, input, button {
+    margin-top: 10px;
+}
+input, button {
+    display: inline-block;
+    margin-bottom: 30px;
+}
+.slider {
+    margin: 0;
+    padding: 0;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: black;
+}
+.imgslid {
+    margin-left: 20%;
+    width: 800px;
+    height: 500px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.images {
+    width: 500%;
+    height: 500px;
+    display: flex;
+}
+.images input {
+   display: none;
+}
+.slide {
+    width: 20%;
+    transition: .3s ease;
+}
+.slide img {
+    width: 600px;
+    height: 500px;
+}
+
+/* img slide */
+
+.imgdot {
+    position: absolute;
+    width: 600px;
+    margin-top: -40px;
+    display: flex;
+    justify-content: center;
+}
+.imgdot1 {
+    border: 2px solid white;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: .1s;
+}
+.imgdot1:not(:last-child){
+    margin-right: 40px;
+}
+.imgdot1:hover {
+    background: white;
+}
+#img1:checked ~ .first {
+    margin-left: 0;
+}
+#img2:checked ~ .first {
+    margin-left: -20%;
+}
+#img3:checked ~ .first {
+    margin-left: -40%;
+}
+#img4:checked ~ .first {
+    margin-left: -60%;
+}
